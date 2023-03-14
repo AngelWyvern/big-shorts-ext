@@ -1,0 +1,26 @@
+{
+	"manifest_version":2,
+	"name":"Big Shorts",
+	"description":"Redirects all YouTube Shorts URLs to standard YouTube Video URLs",
+	"version":"1.0",
+	"permissions":
+	[
+		"webRequest",
+		"webRequestBlocking",
+		"webNavigation",
+		"tabs",
+		"*://*.youtube.com/*"
+	],
+	"browser_action":
+	{
+		"default_popup":"prompt.html",
+		"default_icon":"play_circle_FILL0_wght300_GRAD200_opsz18.png"
+	},
+	"background":
+	{
+		"scripts":
+		[
+			"active.js"
+		]
+	}
+}
